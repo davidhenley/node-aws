@@ -14,3 +14,4 @@
 12. change port to 8080 with nano index.js
 13. sudo npm i -g forever
 14. forever start index.js
+15. sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
